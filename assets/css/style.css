@@ -1,0 +1,2203 @@
+/*==========================================================
+    Template Name: Essentialist
+    Created By: Codeshaper
+    Envato Profile: https://themeforest.net/user/codeshaper
+    Website: http://codeshaper.net
+    Version: v1.0
+    Support: http://codeshaper.net/contact.php
+============================================================*/
+/*==========================================================
+    
+    CSS INDEX
+    ===================
+  
+  1. Theme Default CSS
+  2. Menu Area
+  3. Banner Area
+  4. Services Area
+  5. features Area
+  6. Counting Area
+  7. Portfolio Area
+  8. Team Area
+  9. Testimonial
+  10. Pricing Area
+  11. Contact Area
+  12. Footer Area
+  13. vide slider Area 
+  
+==========================================================*/
+/*----------------------------------------*/
+/*  1. Theme Default CSS
+/*----------------------------------------*/
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'UniversLTStd';
+  src: url('../webFonts/Univers-LT-Std/UniversLTStd.otf');
+}
+
+@font-face {
+  font-family: 'Univers-LT-Std-Bold';
+  src: url('../webFonts/Univers-LT-Std/UniversLTStd-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Univers-ultra-condensed';
+  src: url('../webFonts/Univers-LT-Std/UniversLTStd-UltraCn.otf');
+}
+
+
+@font-face {
+  font-family: "PlantinMTPro-Regular";
+  src: url('../webFonts/PlantinMTProRegular/font.woff2') format('woff2'), url('../webFonts/PlantinMTProRegular/font.woff') format('woff');
+}
+
+/*@font-face {
+  font-family: 'PlantinMTPro-Regular';
+  src: url('../fonts/Plantin-MT-Pro/PlantinMTPro-Regular.otf');
+}
+*/
+@font-face {
+  font-family: "PlantinMTPro-Italic";
+  src: url('../webFonts/PlantinMTProItalic/font.woff2') format('woff2'), url('../webFonts/PlantinMTProItalic/font.woff') format('woff');
+}
+
+
+/*----------------------------------------*/
+/*  1. Theme Default CSS
+/*----------------------------------------*/
+/*-- Common Style --*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.6;
+    margin: 0px;
+    color: #303030;
+}
+
+ h3{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Univers-ultra-condensed',sans-serif;
+    color: #303030;
+ }
+
+
+p{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'PlantinMTPro-Regular';
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+a,
+button {
+    color: inherit;
+    display: inline-block;
+    line-height: inherit;
+    text-decoration: none;
+}
+
+textarea {
+    border: 1px solid #D8D8D8;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'UniversLTStd';
+    font-size: 13px;
+    line-height: 20px;
+    padding: 5px 8px;
+}
+
+
+
+form select,
+input[type=text],
+input[type=number],
+input[type=email] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #D8D8D8;
+    color: #303030 !important;
+    padding: 10px 0px;
+    background: transparent;
+    font-family: 'UniversLTStd';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #AAAAAA;
+}
+
+::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #AAAAAA;
+}
+
+:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #AAAAAA;
+}
+
+::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #AAAAAA;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #AAAAAA;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #AAAAAA;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #AAAAAA;
+}
+
+a,
+i,
+button,
+img,
+input,
+span,
+*:before,
+*:after {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+*:focus {
+    outline: 0px solid transparent;
+}
+a:focus {
+    color: inherit;
+    outline: medium none;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    text-decoration: none;
+}
+a,
+a:hover {
+    text-decoration: none;
+}
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+
+button{
+    outline: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.mt-2 {
+    margin-top: 1.5em;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+body.scroll-stop{
+  overflow: hidden;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.container-sm {
+    max-width: 45%;
+    margin: auto;
+}
+.text-white{
+  color:#fff;
+}
+
+.bg-white {
+    background: #fff !important;
+    position: relative;
+}
+
+.sec-padding{
+  padding: 100px 0px;
+}
+.sec-padding-b{
+  padding-bottom: 100px;
+}
+.sec-padding-t{
+  padding-top: 100px;
+}
+
+.sec-title {
+    text-align: center;
+    position: relative;
+}
+
+.sec-title:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: #D5D5D5;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 10px;
+}
+
+.sec-title h4 {
+    color: #303030;
+    font-family: 'Univers-LT-Std-Bold';
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    display: inline-block;
+    background: #fff;
+    padding: 0px 20px;
+    position: relative;
+}
+
+.section-title-p{
+    padding: 80px 0px;
+    max-width: 875px;
+    margin: auto;
+}
+
+.sec-title p {
+    color: #303030;
+    font-size: 32px;
+    line-height: 45px;
+}
+
+
+.sec-title p span {
+    display: inline-block;
+    font-size: 26px;
+    letter-spacing: 1.86px;
+    font-family: 'UniversLTStd';
+}
+
+.section-title-p span {
+    color: #303030;
+    font-size: 22px;
+    line-height: 32px;
+    font-family: 'PlantinMTPro-Regular';
+    margin-top: 15px;
+    display: block;
+}
+
+.c_btn {
+    border: 1px solid #979797;
+    padding: 0 32.5px;
+    font-family: 'UniversLTStd';
+    position: relative;
+    color: #303030;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.495px;
+    height: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+}
+.c_btn:hover{
+    border: 1px solid #d5d5d5;
+}
+.c_btn:active{
+    border: 1px solid #f4f4f4;
+    background: #f4f4f4;
+}
+
+.c_btn span{
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    font-family: 'UniversLTStd';
+    color: #303030;
+}
+
+.grid-col-2{
+    grid-column-end: span 2;
+}
+/*-- safari browser btn style --*/
+@supports (background: -webkit-canvas(squares)) {
+    .c_btn span{
+        top:3px;
+    }
+}
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    @media {
+        .c_btn span{
+            top:3px;
+        }
+    }
+}
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+        .c_btn span{
+            top:3px;
+        }
+    }
+}
+
+.grid-span-2{
+  -ms-grid-column-span: 2;
+  grid-column: span 2 / span 1;
+}
+
+.lg-content,
+.lg-img{
+  display: block;
+}
+.sm-content,
+.sm-img{
+  display: none !important;
+}
+
+
+.d-md,
+.d-sm{
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.owl-carousel .owl-nav.disabled {
+    display: block;
+}
+
+/*-- Preloader --*/
+
+#preloader {
+    background: #f4f4f4;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #D5D5D5;
+    background: #fff;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.double-bounce1,
+.double-bounce2 {
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #F4F4F4;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: bounce 2s infinite ease-in-out;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+/*----------------------------------------*/
+/*  2. Theme Default CSS
+/*----------------------------------------*/
+.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.header:before {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background: #D5D5D5;
+    left: 10%;
+    bottom: 0;
+    position: absolute;
+}
+
+.h-wrap{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.logo a img {
+    height: 50px;
+}
+
+.h-wrap .nav-toggle{
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+nav>ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+nav>ul>li{
+  margin-left: 15px;
+}
+nav>ul>li:nth-child(1) {
+    width: 100px;
+}
+nav>ul>li:nth-child(2) {
+    width: 95px;
+}
+nav>ul>li:nth-child(3) {
+    width: 80px;
+}
+nav>ul>li:nth-child(4) {
+    width: 77px;
+}
+
+nav>ul>li>a {
+  font-family: 'PlantinMTPro-Regular';
+  color: #303030;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17px;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+    -webkit-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+}
+
+nav>ul>li>a:hover,
+nav>ul>li.active>a {
+    font-family: 'PlantinMTPro-Italic';
+    font-size: 19px;
+    letter-spacing: .03rem;
+}
+
+nav>ul>li>a:after {
+    display: block;
+    content: attr(title);
+    font-family: 'PlantinMTPro-Italic';
+    font-size: 19px;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+
+nav>ul>li:last-child a{
+	border: 1px solid#000;
+    padding: 13px 15px;
+    margin: 15px 0px;
+}
+
+.h-wrap .footer-inner {
+    display: none;
+}
+
+
+/*----------------------------------------*/
+/*  3. Theme Default CSS
+/*----------------------------------------*/
+
+.intro_video_text h2 {
+    color: #fff;
+    font-family: 'PlantinMTPro-Regular';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.intro_video_text p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Univers-LT-Std-Bold';
+    margin: 0px 0 -5px 0px;
+    color: #fff;
+    letter-spacing: 1.38px;
+}
+
+.point:first-child .intro_video_text{
+    width: 54%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+
+.point:first-child  .intro_video_text h2{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: -0.2px;
+}
+
+.point:first-child .intro_video_text p{
+    font-size: 20px;
+    max-width: 456px;
+    margin: auto;
+    line-height: 30px;
+    font-family: 'UniversLTStd';
+    text-transform: inherit;
+    letter-spacing: 0px;
+}
+
+
+
+.philosophie2,
+.philosophie {
+  position: relative;
+}
+
+.philosophie2 .point2,
+.philosophie .point {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 4rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.philosophie #myVideo,
+.philosophie .point {
+  height: calc(100vh - 80px);
+}
+
+
+.philosophie2 .point2:before, 
+.philosophie .point:before {
+    position: absolute;
+    background: -webkit-gradient(linear ,180deg, #ffffff00, rgb(49 49 49 / 10%), rgb(0 0 0 / 30%));
+    background: -o-linear-gradient(180deg, #ffffff00, rgb(49 49 49 / 10%), rgb(0 0 0 / 30%));
+    background: linear-gradient(180deg, #ffffff00, rgb(49 49 49 / 10%), rgb(0 0 0 / 30%));
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.philosophie .point:first-child {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.philosophie .wrapper {
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+.philosophie2 .wrapper2{
+  height: 100vh;
+  width: 100%;
+  background: rgb(221 221 221 / 28%);
+}
+
+.philosophie .wrapper {
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+.point2 .content-wrap2, .point .content-wrap {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+
+.sec-bg2,
+.sec-bg2 video ,
+.sec-bg,
+.sec-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sec-bg2 video,
+.sec-bg video{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+
+/*-- scroll btm --*/
+.scroll-btm {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: 50%;
+    margin-left: -25px;
+    bottom: -32vh;
+    z-index: 1;
+}
+
+
+
+/*-- Timeline style --*/
+.wrapper2:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: url(../img/line.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 10%;
+    height: 80%;
+    bottom: 0;
+    z-index: 99;
+}
+
+.timeline-txt:after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 100%;
+    top: 2px;
+    left: -3px;
+    z-index: 9999;
+}
+
+
+.timeline-txt {
+    max-width: 400px;
+    color: #fff;
+    font-family: 'PlantinMTPro-Regular';
+    position: relative;
+    padding-left: 20px;
+}
+.timeline-txt .date {
+    font-size: 13px;
+    letter-spacing: 1.6px;
+}
+.timeline-txt h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 34px;
+    margin: 10px 0;
+}
+.timeline-txt p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+#myVideo {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.show-lg{
+    display: block;
+}
+
+.show-md,
+.show-sm{
+    display: none;
+}
+/*----------------------------------------*/
+/*  4. what-we-do area css
+/*----------------------------------------*/
+
+.wwd-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  border-top: 1px solid #D5D5D5;
+  padding-top: 50px;
+  position: relative;
+}
+
+
+.wwd-wrap:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 40px);
+    background: #d5d5d5;
+    left: 50%;
+    margin-left: 0px;
+    top: 40px;
+}
+
+.wwd-wrap-left{
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.wwd-wrap-left h4 {
+    color: #303030;
+    font-family: 'Univers-LT-Std-Bold';
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    margin-bottom: 10px;
+}
+
+
+.wwd-wrap-left p{
+  color: #303030;
+  font-size: 32px;
+  line-height: 44px;
+  max-width: 465px;
+}
+
+.wwd-wrap-left .c_btn {
+    margin-top: 25px;
+}
+
+.wwd-wrap-right {
+    padding: 50px 18px;
+}
+
+.teams{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+.teams>div:last-child{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.team-sm{
+  display: none;
+}
+.team-sm-wrap {
+    display: none;
+}
+
+.single-team {
+    padding-bottom: 30px;
+}
+.single-team:last-child{
+  padding-bottom: 0;
+}
+.single-team img{
+  width: 100%;
+}
+
+
+.single-team h4 {
+    color: #303030;
+    font-family: 'PlantinMTPro-Regular';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.single-team p {
+    color: #303030;
+    font-family: 'UniversLTStd';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.15px;
+}
+
+
+/*----------------------------------------*/
+/*  5. uncommon experiences area css
+/*----------------------------------------*/
+
+.uncommon-experience .section-title-p{
+    max-width: 730px;
+}
+.exceptional-service .section-title-p{
+    max-width: 610px;
+}
+
+.ue-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.ue-card {
+    background: #f8f8f8;
+    display: inline-block;
+    border-radius: 20px;
+    margin-right: 48px;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.ue-card-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 20px;
+}
+.ue-card-title h3 {
+    color: #303030;
+    font-weight: 400;
+    line-height: 46px;
+    margin: 0;
+    font-family: 'PlantinMTPro-Regular';
+    font-size: 30px;
+    margin-left: 10px;
+    position: relative;
+    top: 4px;
+}
+
+.ue-card.empty-card {
+  width: 300px;
+  height: 100px;
+  background: transparent;
+}
+
+/*----------------------------------------*/
+/*  6. member widget area css
+/*----------------------------------------*/
+
+
+
+
+.member-widget {
+    padding-bottom: 80px;
+}
+
+
+.client-wraper2,
+.client-wraper {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 90%;
+    margin: auto;
+}
+.client-logo2,
+.client-logo {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
+    margin-bottom: 60px;
+    height: 45px;
+}
+
+/*.client-logo2 img,
+.client-logo img{
+    height: 100%;
+}*/
+
+.client-logo:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / span 4;
+}
+.client-logo:nth-child(2) {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-column: 5 / span 2;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 15px;
+}
+.client-logo:nth-child(3) {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
+    grid-column: 7 / span 1;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+}
+.client-logo:nth-child(4) {
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 3;
+    grid-column: 8 / span 3;
+}
+.client-logo:nth-child(5) {
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 2;
+    grid-column: 11 / span 2;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+}
+.client-logo:nth-child(5) {
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 2;
+    grid-column: 11 / span 2;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+}
+.client-logo:nth-child(6) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / span 4;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.client-logo:nth-child(7) {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-column: 5 / span 2;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.client-logo:nth-child(8) {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 3;
+    grid-column: 7 / span 3;
+}
+.client-logo:nth-child(9) {
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 2;
+    grid-column: 10 / span 2;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+}
+
+/*
+*   Editors & about page Client Logo
+*/
+.client-wraper2{
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(10, 1fr);
+}
+.client-logo2:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / span 4;
+}
+.client-logo2:nth-child(2) {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-column: 5 / span 2;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.client-logo2:nth-child(3) {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 2;
+    grid-column: 7 / span 2;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.client-logo2:nth-child(4) {
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 2;
+    grid-column: 9 / span 2;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.client-logo2:nth-child(5) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.client-logo2:nth-child(6) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-column: 3 / span 3;
+    padding-left: 15%;
+}
+.client-logo2:nth-child(7) {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 2;
+    grid-column: 6 / span 2;
+}
+.client-logo2:nth-child(8) {
+    -ms-grid-column: 8;
+    -ms-grid-column-span: 3;
+    grid-column: 8 / span 3;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 40px;
+}
+.client-logo2:nth-child(9) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+}
+.client-logo2:nth-child(10) {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-column: 4 / span 2;
+}
+.client-logo2:nth-child(11) {
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 3;
+    grid-column: 6 / span 3;
+}
+.client-logo2:nth-child(12) {
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 2;
+    grid-column: 9 / span 2;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.member-widget .section-title-p {
+  max-width: 757px;
+  padding-bottom: 30px;
+}
+
+.member-widget .section-title-p p {
+    line-height: 48px;
+}
+
+.mw-fee .section-title-p {
+    padding-bottom: 35px;
+    max-width: 520px;
+}
+
+.mw-fee .section-title-p p {
+    line-height: 28px;
+}
+
+
+/*----------------------------------------*/
+/*  7. footer area css
+/*----------------------------------------*/
+
+.footer-inner {
+  border-top: 1px solid #D5D5D5;
+  border-bottom: 1px solid #D5D5D5;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px;
+}
+
+
+.footer-single:first-child {
+  -ms-grid-column-span: 2;
+  grid-column: span 2 / span 1;
+  width: 80%;
+}
+
+.footer-single p {
+    font-family: 'UniversLTStd';
+    font-size: 14px;
+    line-height: 22px;
+    color: #303030;
+}
+
+.footer-single ul li a {
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'PlantinMTPro-Regular';
+        color: #303030;
+}
+
+.fotoer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.footer-single h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #303030;
+    letter-spacing: 1.61px;
+    margin-bottom: .6rem;
+    font-family: 'Univers-LT-Std-Bold';
+    line-height: 28px;
+}
+
+.fotoer-bottom a{
+    color: #aaa;
+    font-family: 'UniversLTStd';
+    letter-spacing: 1.035px;
+    padding: 10px 0;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.fotoer-bottom a span {
+    font-size: 9px;
+    opacity: .3;
+}
+
+.subscription {
+    margin-top: 15px;
+    position: relative;
+}
+.subscription input{
+    text-transform: uppercase;
+    font-family: 'UniversLTStd';
+}
+
+.subscription button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding: 0 0 0 20px;
+    cursor: pointer;
+    background: #fff;
+    bottom: 2px;
+}
+
+.subscription label a {
+    text-decoration: underline;
+}
+
+.footer-single .agree-input {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 8px;
+    display: block;
+    font-family: 'UniversLTStd';
+}
+
+
+/*----------------------------------------*/
+/*  8. page title
+/*----------------------------------------*/
+
+.simple-title h2 {
+  font-size: 32px;
+  color: #303030;
+  font-family: 'PlantinMTPro-Regular';
+  text-align: center;
+  padding: 60px 0 45px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.page-title-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 60px 0px 100px; 
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.page-title-inner .pt-left {
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc(100% - 400px);
+}
+
+.page-title-inner .pt-right {
+  width: 340px;
+}
+
+.page-title-inner .pt-left:after {
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+    content: "";
+    position: absolute;
+    right: 40px;
+    top: 0;
+}
+
+
+.pt-right h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1.6px;
+    font-family: 'Univers-LT-Std-Bold';
+    margin-bottom: 10px;
+}
+
+.pt-right h2 {
+    font-size: 28px;
+    line-height: 38px;
+    font-family: 'PlantinMTPro-Regular';
+    font-weight: 400;
+}
+
+.pt-right p {
+  color: #303030;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 10px;
+  padding-right: 15px;
+}
+
+
+/*----------------------------------------*/
+/*  9. members-page-css
+/*----------------------------------------*/
+.members-area {
+    padding: 55px 0;
+}
+
+.members-area-banner img{
+  width: 100%;
+}
+
+
+.members-benefits{
+  background: #EFEDE8;
+}
+
+.members-benefits .sec-title:before {
+    background: #aaaaaa;
+}
+.members-benefits .sec-title h4 {
+    background: #EFEDE8;
+}
+
+.members-benefits-inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.mb-single {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'PlantinMTPro-Regular';
+    padding: 45px 0px 45px 20px;
+    border-bottom: 1px solid #aaa;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.mb-single-num img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+
+.mb-single-text h3 {
+    font-family: 'PlantinMTPro-Regular';
+    font-size: 24px;
+    line-height: 30px;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.mb-single-text > p {
+    color: #303030;
+    font-family: 'PlantinMTPro-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+
+.mb-single-num {
+    width: 160px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mb-single:nth-child(4),
+.mb-single:nth-child(5),
+.mb-single:nth-child(6){
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.mb-single-text {
+    border-right: 1px solid #aaa;
+    padding-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.mb-single-inner {
+    max-width: 246px;
+}
+
+.mb-single:nth-child(3n) .mb-single-text {
+    border-right: none;
+}
+
+.member-widget .sec-title h3 {
+    font-size: 24px;
+    font-family: PlantinMTPro-Regular;
+    max-width: 515px;
+    margin: 35px auto 0;
+    font-weight: 400;
+}
+
+.member-widget .sec-title h3 a {
+    text-decoration: underline;
+}
+
+
+/*----------------------------------------*/
+/*  10. editors-page-css
+/*----------------------------------------*/
+.members{
+  padding: 55px 0px;
+}
+.members-wrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.ms-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.ms-img img{
+    width: 100%;
+}
+
+.ms-img-hover {
+    position: absolute;
+    width: 100%;
+    height: 99.5%;
+    background: rgb(48 48 48 / 80%);
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    opacity: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    overflow: auto;
+}
+
+/* width */
+.ms-img-hover::-webkit-scrollbar {
+  width: 4px;
+}
+/* Track */
+.ms-img-hover::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+/* Handle */
+.ms-img-hover::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+/* Handle on hover */
+.ms-img-hover::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.ms-img-hover p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'PlantinMTPro-Regular';
+}
+
+.ms-img:hover .ms-img-hover{
+    opacity: 1;
+}
+
+.members-single > h2 {
+    font-size: 20px;
+    font-family: 'PlantinMTPro-Regular';
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+.members-single > p {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'UniversLTStd';
+    letter-spacing: 1.15px;
+    line-height: 18px;
+}
+.members-single:last-child {
+    display: none;
+}
+.ms-img-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.ms-img-content h2 {
+    text-transform: uppercase;
+    font-family: 'Univers-LT-Std-Bold';
+    letter-spacing: 1.6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.ms-img-content p {
+  line-height: 32px;
+  color: #303030;
+  font-size: 22px;
+}
+
+
+
+.editors-also {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+.editors-also-single p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 35px;
+  color: #303030;
+}
+
+.editors-also-single p span {
+    font-family: 'PlantinMTPro-Italic';
+}
+
+
+
+/*----------------------------------------*/
+/*  11. about-page-css
+/*----------------------------------------*/
+
+.about-title .page-title-inner {
+  border: none;
+  position: relative;
+}
+
+.about-title .page-title-inner:after {
+    position: absolute;
+    content: "";
+    width: 77%;
+    height: 1px;
+    background: #d8d8d8;
+    bottom: 0;
+}
+
+.about-title .page-title-inner .pt-left:after{
+  display: none;
+}
+
+.team .section-title-p {
+    max-width: 806px;
+}
+
+.team .sec-title p {
+    color: #303030;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.owl-nav > button {
+    position: absolute;
+    top: 40%;
+}
+
+.owl-nav > button:first-child {
+    left: -25px;
+}
+
+.owl-nav > button:last-child {
+    right: -25px;
+}
+
+.owl-nav > button > span {
+    font-size: 34px;
+    opacity: .5;
+}
+
+.team-content h2 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'PlantinMTPro-Regular';
+    margin-top: 5px;
+}
+
+.team-content p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'UniversLTStd';
+    letter-spacing: 1.5px;
+    line-height:20px;
+}
+
+.connect-us {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.connect-us h2 {
+    font-family: 'PlantinMTPro-Regular';
+    font-size: 20px;
+    line-height: 31px;
+    font-weight: unset;
+}
+
+.connect-us p {
+    font-size: 16px;
+    font-family: 'PlantinMTPro-Regular';
+    color: #303030;
+    padding: 5px 0 10px;
+    max-width: 246px;
+    margin: auto;
+}
+
+.editors-also > div:nth-child(2) p {
+    max-width: 265px;
+}
+
+.connect-us > a {
+    text-transform: uppercase;
+    font-family: 'UniversLTStd';
+    font-size: 12px;
+    letter-spacing: 1.15px;
+    line-height: 18px;
+}
+
+/*-- team-quote --*/
+.team-quote{
+    padding-bottom: 80px;
+}
+
+.about-content-img {
+    margin-bottom: 30px;
+}
+
+.about-content-img:last-child {
+    margin-bottom: 0px;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.about-left {
+    width: calc(100% - 216px);
+    box-sizing: border-box;
+    padding-right: 25px;
+    position: relative;
+}
+
+.about-right {
+    width: 216px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    padding-top: 60px;
+}
+
+.about-left:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: calc(100% - 70px);
+    background: #d5d5d5;
+    right: 0px;
+    top: 60px;
+}
+
+.about-title {
+    border-bottom: 1px solid #ddd;
+    padding: 60px 0px 100px;
+}
+
+.about-content-wrap {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.about-left-content h3 {
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Univers-LT-Std-Bold';
+    margin-bottom: 10px;
+    letter-spacing: 1.61px;
+}   
+
+.about-left-content p {
+    font-size: 22px;
+    color: #303030;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.single-quote{
+    margin-bottom: 50px;
+}
+
+.single-quote p {
+    font-size: 22px;
+    line-height: 32px;
+    font-family: 'PlantinMTPro-Italic';
+    color: #303030;
+}
+
+.single-quote h3 {
+    font-size: 16px;
+    font-family: 'PlantinMTPro-Regular';
+    margin: 20px 0 0 0;
+    line-height: 20px;
+    font-weight: unset;
+}
+
+.single-quote h4 {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'UniversLTStd';
+    line-height: 18px;
+    letter-spacing: 1.15px;
+    font-weight: unset;
+}
+
+.about-left-img{
+    position: relative;
+}
+
+.about-left-img img{
+    width: 100%;
+}
+
+.about-left-img:after {
+    position: absolute;
+    content: "";
+    right: -25px;
+    top: 0px;
+    width: 1px;
+    height: 100%;
+    background: #d5d5d5;
+}
+
+.quote-mbl,
+.tql-single-mbl{
+    display: none;
+    visibility: hidden;
+}
+
+/*----------------------------------------*/
+/*  12. modal area css
+/*----------------------------------------*/
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    margin:1rem 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-inner{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #303030;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.show-modal{
+  display: table;
+  overflow: auto;
+}
+
+.modal-wrap {
+    width: 630px;
+    background: #fff;
+    min-height: 75vh;
+    position: relative;
+    margin: auto;
+}
+
+#close-thanku,
+#close-modal {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.modal-body {
+    padding: 40px 30px;
+}
+
+.form-group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-bottom: 20px;
+}
+
+.form-group input {
+    padding: 12px 12px 10px 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.modal-body h2 {
+    font-size: 24px;
+    font-family: 'PlantinMTPro-Regular';
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.form-group label{
+    font-family: 'UniversLTStd';
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+    line-height: 13px;
+    letter-spacing: 1.42px;
+    color: #303030;
+}
+
+.form-rules p {
+    font-family: 'UniversLTStd';
+    font-size: 12px;
+    line-height: 18px;
+    color: #303030;
+}
+.form-rules p:first-child {
+    margin-bottom: 6px;
+}
+.form-rules p a{
+    text-decoration: underline;
+}
+
+.form-submit {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.form-submit .c_btn {
+    width: 180px;
+    text-align: center;
+    height: 43px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+}
+
+
+.modal-thanku-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+}
+
+.thanku-content{
+    width: 100%;
+    text-align: center;
+/*     height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-thanku-body img {
+    padding-bottom: 3rem;
+}
+
+.modal-thanku-body h2 {
+    font-family: 'PlantinMTPro-Regular';
+    font-size: 24px;
+    margin-bottom: 8px;
+    line-height: 34px;
+    font-weight: 100;
+}
+
+.modal-thanku-body p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+
+.form-custom-select2,
+.form-custom-select {
+    position: relative;
+    display: block;
+}
+
+.select-opt2,
+.select-opt {
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    z-index: 9;
+    margin-top: 0rem;
+    border-top: 0;
+    opacity: 0;
+    z-index: -99;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-height:300px;
+    overflow:auto;
+}
+
+.select-open2 .select-opt2,
+.select-open .select-opt {
+    opacity: 1;
+    z-index: 9;
+}
+
+.form-custom-select::before {
+    content: url(../img/arrow-btm.svg);
+    position: absolute;
+    top: 14px;
+    right: 0;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+.form-custom-select2::before {
+    content: url(../img/arrow-btm.svg);
+    position: absolute;
+    top: 14px;
+    right: 0;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+.select-open2::before,
+.select-open::before {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.select-opt2 ul li,
+.select-opt ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'PlantinMTPro-Regular';
+    color: #303030;
+    padding: 1px;
+}
+
+/*----------------------------------------*/
+/*  13. Other normal page desing
+/*----------------------------------------*/
+.single-block {
+    border-top: 1px solid #D8D8D8;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.single-block p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+        color: #303030;
+}
+.single-block h4 {
+    margin-bottom: 15px;
+    color: #303030;
+    font-family: 'UniversLTStd';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.61px;
+}
+.single-block h4 span {
+    margin-right: 5px;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+i,
+em {
+    font-family: 'PlantinMTPro-Italic' !important;
+}
+
+
+.footer-single:first-child {
+    display: none !important;
+}
+.footer-single:last-child {
+    grid-column: 5 / span 1;
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+.triradio-btn{
+	display: flex;
+}
+
+.triradio-btn .upcomingtrip-input{
+	flex-basis:150px;
+}
+
+.triradio-btn .upcomingtrip-input label:last-child{
+	margin-right:0px;
+}
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="179px" viewBox="0 0 120 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 12</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="membership" transform="translate(-100.000000, -1537.000000)">
+            <g id="Group-12" transform="translate(100.000000, 1537.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" opacity="0" x="0" y="0" width="120" height="179"></rect>
+                <path d="M72,168.84 L72,126.38 L81.24,126.38 L81.24,119.78 L72,119.78 L72,10 L59.68,10 L39,115.6 L39,126.38 L64.08,126.38 L64.08,168.84 L72,168.84 Z M64.08,119.78 L45.6,119.78 L60.34,39.26 C61.66,32.0733333 62.76,24.52 63.64,16.6 L63.64,16.6 L64.08,16.6 L64.08,119.78 Z" id="4" fill="#303030" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

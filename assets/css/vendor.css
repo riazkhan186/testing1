@@ -1,0 +1,1015 @@
+header.c-header {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background: #fff;
+}
+
+.c-header .container{
+    width: 95%;
+}
+
+.c-header .logo {
+    width: auto;
+    min-width: 130px;
+}
+
+.c-header .logo img {
+    max-width: 400px;
+    height: auto;
+}
+
+.c-header .logo a {
+    font-family: 'Univers-LT-Std-Bold';
+    font-size: 30px;
+}
+
+.c-header .logo a {
+    font-family: 'Univers-LT-Std-Bold';
+    font-size: 30px;
+}
+
+.logo a sub {
+    font-family: 'PlantinMTPro-Italic';
+    font-size: 18px;
+    top: -5px;
+    position: relative;
+}
+
+
+.logo a sub span{
+    font-family: 'PlantinMTPro-Regular';
+}
+
+.c-header .search a,
+.c-header .right-nav{
+    display: flex;
+    align-items: center;
+}
+
+.c-header nav>ul>li {
+    width: auto !important;
+}
+
+.c-header nav>ul>li:last-child a{
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+    line-height: 22px;
+}
+
+
+.c-header .search a span,
+.c-header nav>ul>li a{
+	font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1.6px;
+    font-family: 'Univers-LT-Std-Bold';
+	text-align: right;
+    color: #303030;
+}
+
+.c-header .search a svg {
+    width: 16px;
+    margin-right: 3px;
+    position: relative;
+    top: -1px;
+}
+
+
+.py-100{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+
+.c-item-wrapper {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;*/
+}
+.c-item-single {
+    flex-direction: column;
+    position: relative;
+    width: calc(33.3% - 0rem);
+    border-radius: 10px;
+    padding: 3% 3%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.c-item-wrapper .c-item-single:nth-child(2) {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+.c-item-single img{
+    width: 100%;
+}
+
+.c-item-wrapper .c-item-single:nth-child(1),
+.c-item-wrapper .c-item-single:nth-child(3) {
+    margin-top: 150px;
+}
+
+.vm-container h4,
+.itinerary-blog-inner h4,
+.hero-content h4,
+.how-work-single h4,
+.how-work-title h4,
+.blog-inner-content h4,
+.c-title h4 {
+    font-family: 'UniversLTStd';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1.25px;
+    line-height: 18px;
+}
+
+
+.how-work-single h4{
+    font-family: 'Univers-LT-Std-Bold';
+    margin: 15px 0px;
+}
+
+
+.itinerary-blog-inner h2,
+.hero-content h2,
+.how-work-title h2,
+.c-title h2 {
+    color: #303030;
+    line-height: 45px;
+    font-family: 'PlantinMTPro-Regular';
+    font-size: 50px;
+    margin-top: 25px;
+    line-height: 52px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    letter-spacing: -1.29px;
+}
+
+
+
+.itinerary-blog-inner p,
+.how-work-single p,
+.c-title p {
+    color: #303030;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.itinerary-blog-inner p,
+.itinerary-blog-inner h2,
+.itinerary-blog-inner h4,
+.blog-inner-content h4,
+.hero-content h4,
+.hero-content h2{
+    color: #fff;
+}
+
+.blog-inner-content {
+    position: absolute;
+    top: 7%;
+    left: 9%;
+    width: calc(100% - 18%);
+    height: calc(100% - 14.8%);
+    box-sizing: border-box;
+    background: #AB4E47;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    z-index: 999;
+    opacity: 0;
+    transition: .5s;
+}
+
+.blog-inner-content:after {
+    width: 105.5%;
+    height: 104%;
+    content: '';
+    border: 1px solid #303030;
+    top: -2%;
+    left: -3%;
+    position: absolute;
+    z-index: -1;
+}
+
+.c-item-single:hover .blog-inner-content{
+    opacity: 1;
+}
+
+
+.blog-inner-content h2 {
+    color: #fff;
+    font-family: 'PlantinMTPro-Regular';
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 15px 0px;
+    font-size: 34px;
+    line-height: 38px;
+}
+
+
+.blog-inner-content > a {
+    font-size: 15px;
+    line-height: initial;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #FFf;
+    border: 1px solid #fff;
+    padding: 15px 20px 15px;
+    margin-top: 10px;
+    font-family: 'UniversLTStd';
+}
+
+.how-work{
+    background: #FAFAF8;
+    padding: 100px 0px;
+}
+
+.how-work-title {
+    text-align: center;
+}
+
+.how-work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer-wrapper {
+    background: #FAFAF8;
+}
+
+.footer-wrapper .footer-single:first-child{
+    display: block !important;
+}
+
+.footer-wrapper .footer-single .subscription button{
+    background: transparent;
+}
+
+
+
+/**========== BLOG SINGLE ===========**/
+.hero-banner {
+    height: calc(100vh - 78px);
+    position: relative;
+    display: flex;
+}
+.hero-banner:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #0000003d;
+    z-index: 9;
+}
+
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.hero-sm{
+    display: none;
+}
+
+.xs-container{
+    max-width:670px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    text-align: center;
+    position: sticky;
+    width: 670px;
+    bottom: 0;
+    z-index: 99;
+    box-sizing: border-box;
+    margin: 0 auto;
+    align-self: flex-end;
+    margin-bottom: 5rem;
+}
+.blog-content{
+    padding: 80px 0px;
+    text-align: center;
+}
+
+.blog-content p {
+    font-size: 26px;
+    line-height: 34px;
+}
+.blog-content p{
+    margin-bottom: 20px;
+}
+
+.blog-content .c_btn {
+    margin-top: 15px;
+}
+
+.related-blog{
+    padding: 80px 0px;
+    overflow: hidden;
+}
+
+.related-blog-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.related-blog-single {
+    display: inline-block;
+    margin-left: 48px;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.related-blog-wrap .related-blog-single:last-child{
+    margin-right: 30px;
+}
+
+.related-blog-single:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000059;
+    z-index: 9;
+}
+
+.related-blog-single a {
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    bottom: 24px;
+    padding: 0px 20% 0px 29px;
+    white-space: break-spaces;
+    box-sizing: border-box;
+}
+
+.related-blog-single a h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Univers-LT-Std-Bold';
+    letter-spacing: 1.25px;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+.related-blog-single a p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    font-family: 'PlantinMTPro-Regular';
+}
+
+.itinerary-blog{
+    background: #AB4E47;
+    padding: 100px 0px;
+}
+
+.itinerary-blog {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.itinerary-blog-inner {
+    max-width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    box-sizing: border-box;
+    padding-right: 5%;
+}
+
+.itinerary-img {
+    width: 50%;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: flex-end;
+}
+
+.itinerary-img img{
+    width: 100%;
+}
+
+
+.itinerary-blog-inner a {
+    border-color: #fff;
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+.logo-sm{
+    display: none;
+}
+
+/**========== search modal CSS ===========**/
+#search-area {
+    width: 400px;
+    background: #fff;
+    z-index: 999999;
+    position: absolute;
+    padding: 40px;
+    right: 0;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: none;
+}
+
+#search-area form {
+    display: flex;
+    border: 1px solid #000000;
+    padding-left: 5px;
+}
+
+#search-area form svg {
+    width: 25px;
+}
+
+#search-area form input {
+    border-bottom: none;
+    padding-left: 10px;
+}
+/**========== VERIFY MODAL CSS ===========**/
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+#verify-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(244 244 244 / 95%);
+    z-index: 9999;
+}
+
+.vm-container {
+    width: 650px;
+    background: #fff;
+    padding: 5rem 7rem;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.vm-container h2{
+    font-family: 'PlantinMTPro-Regular';
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: -0.87px;
+    font-weight: 300;
+    margin: 15px 0px 25px;
+}
+
+.digit-group input {
+    box-sizing: border-box;
+    height: 60px;
+    width: 50px;
+    border: 1px solid #D5D5D5;
+    border-radius: 4px;
+    padding: 12px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.digit-group > p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #DB0A0A;
+    font-family: 'UniversLTStd';
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.digit-group input:last-child{
+    margin-right: 0px;
+}
+
+.invalid-otp input {
+    border-color: #DB0A0A;
+}
+
+.digit-group.invalid-otp > p{
+    opacity: 1;
+}
+
+.vm-data-thanku,
+.vm-data,
+.vm-verify {
+    display: none;
+}
+
+.vm-data form{
+    margin-top: 30px;
+}
+
+.isShowing{
+    display: block !important;
+}
+
+.vm-data .form-rules label a {
+    text-decoration: underline;
+}
+.vm-data .form-rules label {
+    font-family: 'UniversLTStd';
+    font-size: 12px;
+}
+
+
+.vm-data .iti.iti--allow-dropdown{
+    grid-column-end: span 2;
+}
+
+.vm-data-thanku p {
+    margin-top: 20px;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    color: #303030;
+}
+
+.vm-data .iti__country-list,
+.select-open .select-opt {
+    background: #fff;
+    z-index: 999;
+}
+
+.iti__country-name {
+    text-transform: lowercase;
+    font-family: 'UniversLTStd';
+    font-weight: 300 !important;
+}
+/**========== VENDOR RESPONSIVE CSS ===========**/
+@media screen and (min-width: 601px){
+    .c-item-single{
+        background: transparent !important;
+    }
+}
+
+
+@media screen and (max-width: 1596px){
+    .itinerary-blog-inner h2, .hero-content h2, .how-work-title h2, .c-title h2 {
+        font-size: 45px;
+    }
+}
+
+
+@media screen and (max-width: 1596px){
+    .itinerary-blog-inner h2, .hero-content h2, .how-work-title h2, .c-title h2 {
+        line-height: 45px;
+    }
+}
+
+
+
+@media screen and (max-width: 1440px){
+
+    .itinerary-blog-inner h2, .hero-content h2, .how-work-title h2, .c-title h2 {
+        line-height: 45px;
+        font-size: 40px;
+    }
+
+    .blog-inner-content:after {
+        width: 105%;
+        height: 104%;
+        top: -2.3%;
+        left: -2.6%;
+    }
+
+    .itinerary-blog-inner p, .how-work-single p, .c-title p {
+        font-size: 16px;
+    }
+
+    .itinerary-blog-inner h4, .hero-content h4, .how-work-single h4, .how-work-title h4, .blog-inner-content h4, .c-title h4 {
+        font-size: 13px;
+    }
+
+    .blog-inner-content h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1300px){
+    .c-item-single {
+        padding: 3% 2%;
+    }
+
+    .blog-inner-content {
+        top: 6.5%;
+        left: 6%;
+        width: calc(100% - 12%);
+        height: calc(100% - 14%);
+    }
+
+    .blog-inner-content h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .itinerary-blog-inner h2, .hero-content h2, .how-work-title h2, .c-title h2 {
+        font-size: 37px;
+    }
+    .itinerary-blog-inner {
+        padding-left: 8%;
+    }
+}
+
+@media screen  and (min-width: 768px) and (max-width: 1099px){
+    .itinerary-blog-inner h2, .hero-content h2, .how-work-title h2, .c-title h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1024px){
+
+    .c-header .logo a {
+        font-size: 20px;
+    }
+
+    .logo a sub {
+        font-size: 13px;
+    }
+
+    .itinerary-blog-inner h2, .hero-content h2, .how-work-title h2, .c-title h2 {
+        font-size: 33px;
+        line-height: 40px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    .itinerary-blog-inner p, .how-work-single p, .c-title p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .itinerary-blog-inner h4, .hero-content h4, .how-work-single h4, .how-work-title h4, .blog-inner-content h4, .c-title h4 {
+        font-size: 12px;
+    }
+
+    .blog-inner-content h2 {
+        font-size: 26px;
+        line-height: 30px;
+        margin: 8px 0px 5px;
+    }
+
+    .blog-inner-content > a {
+        font-size: 12px;
+        line-height: 21px;
+        padding: 6px 14px;
+    }
+
+    .itinerary-blog-inner {
+        padding-left: 8%;
+    }
+}
+
+
+@media screen and (min-width: 768px) and  (max-width: 991px){
+    .itinerary-blog-inner h4, .hero-content h4, .how-work-single h4, .how-work-title h4, .blog-inner-content h4, .c-title h4 {
+        font-size: 11px;
+    }
+    .itinerary-blog-inner h2, .hero-content h2, .how-work-title h2, .c-title h2 {
+        font-size: 26px;
+        line-height: 34px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    .itinerary-blog-inner p, .how-work-single p, .c-title p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .blog-inner-content h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .blog-inner-content {
+        padding: 0px 15px;
+    }
+
+    .c-header .logo img {
+        max-width: 300px;
+    }
+
+    .itinerary-blog-inner {
+        padding-left: 8%;
+    }
+
+}
+
+.lg-none{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+
+    .hero-lg{
+        display: none;
+    }
+
+    .hero-sm{
+        display: block;
+    }
+
+    .c-header .search a span,
+    .logo-lg{
+        display: none;
+    }
+    .logo-sm{
+        display: block;
+    }
+
+    .lg-none{
+        display: block;
+        margin: auto;
+    }
+
+    .sm-none{
+        display: none;
+    }
+
+    .c-item-single.c-title {
+        width: 75%;
+    }
+
+    .c-item-single {
+        width: 50%;
+    }
+
+    .c-item-wrapper .c-item-single:nth-child(1),
+    .c-item-wrapper .c-item-single:nth-child(3) {
+        margin-top: 0px;
+    }
+
+    .blog-inner-content {
+        top: 4.5%;
+        left: 4%;
+        width: calc(100% - 8%);
+        height: calc(100% - 10%);
+    }
+
+    .c-header .logo img {
+        max-width: 220px;
+    }
+
+    .itinerary-blog{
+        display: block;
+    }
+
+    .itinerary-blog-inner{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .itinerary-blog {
+        background: #AB4E47;
+        padding: 80px 0px 0px;
+    }
+
+    .itinerary-img {
+        width: 100%;
+        margin: auto;
+    }
+    .itinerary-blog-inner h2,
+    .hero-content h2, .how-work-title h2, .c-title h2 {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .blog-content .c_btn,
+    .itinerary-blog-inner a {
+        color: #fff;
+        margin-top: 20px;
+        font-size: 11px;
+        height: 42px;
+        padding: 0px 15px;
+    }
+    .related-blog-single a h2 {
+        font-size: 11px;
+    }
+
+    .related-blog-single a p {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .itinerary-blog-inner p{
+        font-size: 18px;
+        list-style: 25px;
+    }
+
+    #search-area {
+        width: 100%;
+        margin-top: 17px;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    .vm-container {
+        max-width: 70%;
+        padding: 4rem 3rem;
+    }
+
+    .vm-container h4{
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .vm-container h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .digit-group input {
+        height: 55px;
+        width: 45px;
+        margin-right: 0px;
+    }
+
+    #verify-form-sibmit .form-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .c-item-single.c-title,
+    .c-item-single {
+        width: 100%;
+    }
+
+    header.c-header {
+        position: fixed;
+        top: 0;
+        z-index: 99999;
+        background: #fff;
+        width: 100%;
+    }
+
+
+    .c-item-single.c-title{
+        background-color: transparent !important;
+        padding-top: 40px;
+    }
+
+    .c-header .search a svg {
+        width: 20px;
+    }
+
+    .c-item-single {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: #AB4E47;
+        border-radius: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .c-item-single img {
+        width: 60%;
+        box-shadow: 0 0 55px 0 rgba(0,0,0,0.3);
+    }
+
+    .blog-inner-content {
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: transparent !important;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .blog-inner-content > a {
+        font-size: 11px;
+        padding: 12px 20px 12px;
+        margin-top: 0;
+    }
+
+    .blog-inner-content h2 {
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+
+    .blog-inner-content:after{
+        display: none;
+    }
+
+    .how-work-grid {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+
+     .c-title h2 {
+        margin-top: 15px;
+    }
+
+    .hero-banner{
+        height: 100vh;
+    }
+
+    .blog-content p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .blog-content {
+        padding: 45px 20px;
+        text-align: center;
+    }
+
+    .related-blog {
+        padding: 20px 0px 60px;
+    }
+
+    .related-blog-wrap {
+        overflow-x: auto;
+    }
+
+    .related-blog-single {
+        width: 300px;
+        overflow: auto;
+        margin-left: 30px;
+    }
+
+    .vendor-footer .footer-single h3{
+        color: #303030;
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .footer-single ul li a,
+    .vendor-footer .footer-single p {
+        font-size: 13px;
+        line-height: 20px;
+        color: rgba(48,48,48,0.8);
+    }
+
+    .footer-single ul li a{
+        line-height: 24px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+
+    .vm-container {
+        background: #fff;
+        padding: 2rem 3rem;
+        max-width: 80%;
+        max-height: 85%;
+        margin-top: 60px;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .vm-container {
+        padding: 2rem 1rem;
+    }
+}

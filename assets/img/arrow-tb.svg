@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="25px" height="25px" viewbox="0 0 25 25" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter_1">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" />
+    </filter>
+  </defs>
+  <g id="Group-11-Copy" transform="matrix(-0.7071068 0.7071067 -0.7071067 -0.7071068 24.253906 12.586548)" filter="url(#filter_1)">
+    <path d="M0.3 0.3L0.3 16.5" transform="scale(0.9999999 0.9999999)" id="Line-2" fill="none" fill-rule="evenodd" stroke="#979797" stroke-width="1" stroke-linecap="square" />
+    <path d="M16.2 0.3L0 0.3" transform="matrix(0.9999999 7.1054274E-15 -7.1054274E-15 0.9999999 0.30078125 16.200195)" id="Line-2-Copy" fill="none" fill-rule="evenodd" stroke="#979797" stroke-width="1" stroke-linecap="square" />
+  </g>
+</svg>

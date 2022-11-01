@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Essentialist">
+    <meta name="author" content="codeshaper.net">
+    
+    <!-- Links of CSS Files -->
+    <link rel="stylesheet" href="intlTelInput.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="style1.css">
+    <title>NeueHouse & Essentialist</title>
+  </head>
+  <body>
+    <div id="top-progressbar"></div>
+    <!-- First Section -->
+    <section id="home"> 
+      <!-- <div id="top-progressbar"></div> -->
+      <div class="header1">
+        <div class="">
+          <h1>NeueHouse<span>&</span>Essentialist</h1>
+        </div>
+      </div>
+      <div class="main-content row">
+        <div class="main-img-area">
+          <img class="large-image" src="images/img-1.jpg" alt="image">
+          <img class="small-image" src="images/img-1-small.jpg" alt="image">
+        </div>
+        <div class="main-content-text-area">  
+           <div class="text-content">
+            <h6>EXCLUSIVE INVITATION</h6>
+            <h3>At Essentialist, we believe there is a huge difference between visiting a place and truly getting to know it.</h3>
+            <p>So, we gather intelligence from our global network of insiders and travel editors and combine it with our personalized trip-planning service to create unparalleled travel experiences.</p>
+            <p>As part of your complimentary membership, you will have a dedicated travel designer and will receive editorial coverage featuring the latest insights from our travel editors.</p>
+            <button class="positiveButton" type="button" onclick="pageChange('home','second')">Start your Membership</button>
+            <span>
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="10.000000pt" height="10.000000pt" viewBox="0 0 24.000000 24.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,24.000000) scale(0.100000,-0.100000)" fill="" stroke="none">
+                  <path d="M75 231 c-45 -20 -70 -60 -70 -112 0 -42 5 -53 33 -81 28 -28 39 -33 82 -33 43 0 54 5 82 33 28 28 33 39 33 82 0 42 -5 54 -31 81 -33 33 -92 46 -129 30z m55 -73 c0 -19 9 -41 22 -55 26 -28 12 -30 -19 -4 -16 14 -23 30 -23 55 0 20 5 36 10 36 6 0 10 -14 10 -32z"/>
+                </g>
+              </svg>
+              Takes 3 minutes
+            </span>
+            <p class="footer-content">All membership information will be used to provide you with personalized travel plans. Completing this form means you agree with our privacy policy.</p>
+            <a class="positiveOutlineButton" href="https://essentialist.com/" target="_blank">Visit our website</a>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <form  id="tripServey">
+        <!-- Name Section -->
+        <section id="second" class="section" onkeypress="enterPress(event,'#next')"> 
+          <div class="row">
+            <div class="main-img-area ">
+              <img src="images/img-2.jpg" alt="image">
+            </div>
+            <div class="main-content-text-area">
+              <div class="form-section-text-area">
+                <p>1/7</p>
+                <h3>Let’s start with your name</h3>
+                <div name="myName" >
+                  <input type="text" id="fname" class="form-control2" name="fname" placeholder="Name and surname" focus="true" selected>
+                  <span id="error-msg">Please reply to continue.</span>
+                  <div class="group-button">
+                    <button class="positiveOutlineButton" type="button" onclick="pageChange('second', 'home')">Previous</button>
+                    <button class="positiveButton"  id="next" type="button" onclick="validateForm('fname','second','third'); submitFunc()" value="submit">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Your location Section -->
+        <section id="third" class="section" onkeypress="enterPress(event,'#next1')"> 
+          <div class="row">
+            <div class="main-img-area ">
+              <img src="images/img-3.jpg" alt="image">
+            </div>
+            <div class="main-content-text-area">
+              <div class="form-section-text-area">
+                <p>2/7</p>
+                <h3>Hi <span id="name2"></span>, <br> Where are you located?</h3>
+                <div>
+                  <input type="text" id="place" class="form-control2" name="place" placeholder="City" autofocus>
+                  <span id="error-msg">Please reply to continue.</span>
+                  <div class="group-button">
+                    <button class="positiveOutlineButton" type="button" onclick="pageChange('third', 'second')">Previous</button>
+                    <button class="positiveButton" id="next1" type="button" onclick="validateForm('place','third', 'fourth')" value="submit">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Fav Spending Time section -->
+        <section id="fourth" class="section" onkeypress="enterPress(event,'#next3')"> 
+          <div class="row">
+            <div class="main-img-area ">
+              <img src="images/img-4.jpg" alt="image">
+            </div>
+            <div class="main-content-text-area">
+              <div class="form-section-text-area">
+                <p>3/7</p>
+                <h3>How do you like to spend your time traveling?</h3>
+                  <div class="select-card" id="select_card">
+                    <div class="single-card">
+                      <input type="checkbox" name="arts_culture" id="arts_culture" value="arts">
+                      <div class="activities-card">
+                        <div class="activity-img-area">
+                          <img src="images/activities1.jpg" alt="image">
+                        </div>
+                        <h4>Arts & Culture</h4>
+                      </div>
+                    </div>
+                    <div class="single-card">
+                      <input type="checkbox" name="gastronomy" id="gastronomy" value="gastronomy">
+                      <div class="activities-card">
+                        <div class="activity-img-area">
+                          <img src="images/activities1.jpg" alt="image">
+                        </div>
+                        <h4>Gastronomy</h4>
+                      </div>
+                    </div>
+                    <div class="single-card">
+                      <input type="checkbox" name="health_welthness" id="health_welthness" value="health_welthness">
+                      <div class="activities-card">
+                        <div class="activity-img-area">
+                          <img src="images/activities1.jpg" alt="image">
+                        </div>
+                        <h4>Health & Wellness</h4>
+                      </div>
+                    </div>
+                    <div class="single-card">
+                      <input type="checkbox" name="fasion_shopping" id="fasion_shopping" value="fasion_shopping">
+                      <div class="activities-card">
+                        <div class="activity-img-area">
+                          <img src="images/activities1.jpg" alt="image">
+                        </div>
+                        <h4>Fashion & Shopping</h4>
+                      </div>
+                    </div>
+                    <div class="single-card">
+                      <input type="checkbox" name="nature_outdoors" id="nature_outdoors" value="nature_outdoors">
+                      <div class="activities-card">
+                        <div class="activity-img-area">
+                          <img src="images/activities1.jpg" alt="image">
+                        </div>
+                        <h4>Nature & Outdoors</h4>
+                      </div>
+                    </div>
+                    <div class="single-card">
+                      <input type="checkbox" name="sports_adventure" id="sports_adventure" value="sports_adventure">
+                      <div class="activities-card">
+                        <div class="activity-img-area">
+                          <img src="images/activities1.jpg" alt="image">
+                        </div>
+                        <h4>Sports & Adventure</h4>
+                      </div>
+                    </div>
+                    <span class="mt-20" id="error-msg">Please select to continue.</span>
+                  </div>
+                  <div class="group-button">
+                    <button class="positiveOutlineButton" type="button" onclick="pageChange('fourth', 'third')">Previous</button>
+                    <button class="positiveButton" id="next3" type="button" onclick="checkboxValid('fourth', 'fifth')" value="submit">Next</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- number of tour Section -->
+        <section id="fifth" class="section" onkeypress="enterPress(event,'#next4')"> 
+          <div class="row">
+            <div class="main-img-area ">
+              <img src="images/img-5.jpg" alt="image">
+            </div>
+            <div class="main-content-text-area">
+              <div class="form-section-text-area">
+                <p>4/7</p>
+                <h3>How many trips do you usually take a year?</h3>
+                <form onsubmit="return submitFunc()">
+                  <div class="select-button" id="trips_count">
+                    <div class="input-group">
+                      <input type="radio" name="trip_count" id="radio1" value="1-2">
+                      <button type="button" id="radio1" class="positiveOutlineButton" >1 to 3</button>
+                    </div>
+                    <div class="input-group">
+                      <input type="radio" name="trip_count" id="radio2" value="4-6">
+                      <button type="button" id="radio2" class="positiveOutlineButton" >4 to 6</button>
+                    </div>
+                    <div class="input-group">
+                      <input type="radio" name="trip_count" id="radio3" value="7-10">
+                      <button type="button" id="radio3" class="positiveOutlineButton" >7 to 10</button>
+                    </div>
+                    <div class="input-group">
+                      <input type="radio" name="trip_count" id="radio4" value="10">
+                      <button type="button" id="radio4" class="positiveOutlineButton" >More than 10</button>
+                    </div>
+                  </div>
+                  <span class="mt-20" id="error-msg">Please select to continue.</span>
+                  <div class="group-button">
+                    <button class="positiveOutlineButton" type="button" onclick="pageChange('fifth', 'fourth')">Previous</button>
+                    <button class="positiveButton" id="next4" type="button" onclick="radioValid('fifth', 'sixth')" value="submit">Next</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Dream Destination Section -->
+        <section id="sixth" class="section" onkeypress="enterPress(event,'#next5')"> 
+          <div class="row">
+            <div class="main-img-area ">
+              <img src="images/img-6.jpg" alt="image">
+            </div>
+            <div class="main-content-text-area">
+              <div class="form-section-text-area">
+                <p>5/7</p>
+                <h3>Everybody has their dream destinations. <br> What are yours?</h3>
+                <form onsubmit="return submitFunc()">
+                  <textarea name="dream_destination" id="dream_destination" rows="10" placeholder="Tell us more"></textarea>
+                  <span class="mt-20" id="error-msg">Please input to continue.</span>
+                  <div class="group-button">
+                    <button class="positiveOutlineButton" type="button" onclick="pageChange('sixth', 'fifth')">Previous</button>
+                    <button class="positiveButton" id="next5" type="button" onclick="validateForm('dream_destination','sixth', 'seventh')" value="submit">Next</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Accormodation Cost -->
+        <section id="seventh" class="section" onkeypress="enterPress(event,'#next6')"> 
+          <div class="row">
+            <div class="main-img-area ">
+              <img src="images/img-7.jpg" alt="image">
+            </div>
+            <div class="main-content-text-area">
+              <div class="form-section-text-area">
+                <p>6/7</p>
+                <h3>What’s your usual nightly accommodation budget?</h3>
+                <form onsubmit="return submitFunc()">
+                  <div class="select-button" id="acco_budget">
+                    <div class="input-group">
+                      <input type="radio" name="radio" id="radio1" value="300-500">
+                      <button type="button" id="radio1" class="positiveOutlineButton" >$300-$500</button>
+                    </div>
+                    <div class="input-group">
+                      <input type="radio" name="radio" id="radio2" value="500+">
+                      <button type="button" id="radio2" class="positiveOutlineButton" >$500+</button>
+                    </div>
+                    <div class="input-group">
+                      <input type="radio" name="radio" id="radio3" value="1000+">
+                      <button type="button" id="radio3" class="positiveOutlineButton" >$1000+</button>
+                    </div>
+                    <div class="input-group">
+                      <input type="radio" name="radio" id="radio4" value="1500+">
+                      <button type="button" id="radio4" class="positiveOutlineButton" >$1500+</button>
+                    </div>
+                  </div>
+                  <div class="group-button">
+                    <button class="positiveOutlineButton" type="button" onclick="pageChange('seventh', 'sixth')">Previous</button>
+                    <button class="positiveButton" id="next6" type="button" onclick="radioValid( 'seventh', 'eighth')" value="submit">Next</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="eighth" class="section" onkeypress="enterPress(event,'#next7')"> 
+          <div class="row">
+            <div class="main-img-area ">
+              <img src="images/img-8.jpg" alt="image">
+            </div>
+            <div class="main-content-text-area">
+              <div class="form-section-text-area">
+                <p>7/7</p>
+                <h3>How should we stay in touch?</h3>
+                <form onsubmit="return submitFunc()">
+                  <input type="tel" id="phone" class="form-control2" name="phone" pattern="[0-9]{10}" placeholder="Phone" required>
+                  <input type="email" id="email" class="form-control2" name="email" placeholder="Email" required>
+                  <div class="group-button">
+                    <button class="positiveOutlineButton" type="button" onclick="pageChange('eighth', 'seventh')">Previous</button>
+                    <button class="positiveButton" id="next7" type="submit" onclick="validation(event)">Submit</button>
+                    <!-- <button class="positiveButton" id="next7" type="submit" onclick="pageChange('eighth', 'final')" value="submit">Submit</button> -->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+    </form>
+
+    <!-- Thank You Section -->
+    <section id="final" class="section"> 
+      <div class="row">
+        <div class="main-img-area ">
+          <img class="large-image" src="images/img-9.jpg" alt="image">
+          <img class="small-image" src="images/img-9-small.jpg" alt="image">
+        </div>
+        <div class="main-content-text-area">
+          <div class="text-content">
+            <h6>WELCOME TO ESSENTIALIST</h6>
+            <h3>Thanks for submitting your information!</h3>
+            <p>We’ll be sending along an email with your membership details shortly.</p>
+            <a class="positiveOutlineButton" href="#">Schedule a call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Links Of JS Files -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.18/js/intlTelInput.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
